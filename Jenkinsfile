@@ -27,7 +27,7 @@ node{
     stage('publish nexus'){
         
        // nexusPublisher nexusInstanceId: '1234', nexusRepositoryId: 'maven-releases', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'my-app-web.war']], mavenCoordinate: [artifactId: 'my-app-web', groupId: 'com.mycompany.app', packaging: 'war', version: '9.9']]]
-  nexusPublisher nexusInstanceId: '1234', nexusRepositoryId: 'maven-releases', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'target/my-app-web.war']], mavenCoordinate: [artifactId: 'my-app-web', groupId: 'com.mycompany.app', packaging: 'war', version: '11.3']]]
+  nexusPublisher nexusInstanceId: '1234', nexusRepositoryId: 'maven-releases', packages: [[$class: 'MavenPackage', mavenAssetList: [[classifier: '', extension: '', filePath: 'target/my-app-web.war']], mavenCoordinate: [artifactId: 'my-app-web', groupId: 'com.mycompany.app', packaging: 'war', version: '11.5']]]
 
     }
     stage('Deploy Tomcat'){
